@@ -18,9 +18,11 @@
     }
     ```
 3. Visualizing NAs. Package "VIM", explore the structure of missing value. (Missing Not at Random)
-  Below is the source code on [Kaggle BNP script](https://www.kaggle.com/jpmiller/bnp-paribas-cardif-claims-management/visualizing-the-nas)
+  - Below is the source code on [Kaggle BNP script](https://www.kaggle.com/jpmiller/bnp-paribas-cardif-claims-management/visualizing-the-nas)
 
 4. use correlation filter method to find some highly correlated variables
+5. 
+
 
 
 
