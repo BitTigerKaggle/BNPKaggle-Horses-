@@ -2,7 +2,7 @@
 
 ###Take R as the tool for this project###
 
-_ _this is interesting_ _ 
+
 
 1. Load the dataset. Package "readr"
 
