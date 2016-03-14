@@ -1,4 +1,6 @@
-Take R as the tool for this project
+#Project process#
+
+###Take R as the tool for this project###
 
 1. Load the dataset. Package "readr"
 
