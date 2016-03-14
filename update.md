@@ -2,6 +2,8 @@
 
 ###Take R as the tool for this project###
 
+__ this is interesting __
+
 1. Load the dataset. Package "readr"
 
 2. convert the categorical data to numeric value, this is mainly for visualizing NAs. (optional for Xgboost)
