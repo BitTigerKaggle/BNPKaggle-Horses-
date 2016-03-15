@@ -45,7 +45,6 @@
     * Try to use [KNNImpute](http://www.inside-r.org/packages/cran/imputation/docs/kNNImpute)
     * [Imputation for categorical variable](http://www2.sas.com/proceedings/sugi30/113-30.pdf)
     * Optional for [Amelia](http://gking.harvard.edu/amelia) and [Multiple Imputation](http://www.stefvanbuuren.nl/mi/). Do some research on [Multiple imputation course](http://www.stefvanbuuren.nl/mi/course.html)
-    * [Imputation for categorical variables](http://www2.sas.com/proceedings/sugi30/113-30.pdf)
   
   3. Use [entropy based method](https://cran.r-project.org/web/packages/FSelector/FSelector.pdf) to choose some related variables to target variable. This would take a long time because a heap memory limited in R. 
     * _information.gain_
