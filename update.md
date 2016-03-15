@@ -10,13 +10,14 @@
   - The code in R is below:
     ```
     for (f in names(train)) {
-          if (class(train[[f]])=="character") { 
-                levels <- unique(c(train[[f]], test[[f]]))
-                train[[f]] <- factor(train[[f]], levels=levels)
-                test[[f]]  <- factor(test[[f]],  levels=levels)
-          }
+      if (class(train[[f]])=="character") { 
+        levels <- unique(c(train[[f]], test[[f]]))
+        train[[f]] <- factor(train[[f]], levels=levels)
+        test[[f]]  <- factor(test[[f]],  levels=levels)
+      }
     }
     ```
+    
 3. Visualizing NAs. Package "VIM", explore the structure of missing value. (Missing Not at Random)
   - Below is the source code on [Kaggle BNP script](https://www.kaggle.com/jpmiller/bnp-paribas-cardif-claims-management/visualizing-the-nas)
 
