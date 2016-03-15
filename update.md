@@ -36,6 +36,10 @@
   train.num.75 <- temp[, corr.75]
   corrplot(corr.Matrix, order = "hclust")
   ```
+  2. Try various imputation methods
+    * Imputation default value -1
+    * Try to use [KNNImpute](http://www.inside-r.org/packages/cran/imputation/docs/kNNImpute)
+    * Optional for [Amelia](http://gking.harvard.edu/amelia) and [Multiple Imputation](http://www.stefvanbuuren.nl/mi/)
 
 
 
