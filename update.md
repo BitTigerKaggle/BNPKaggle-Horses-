@@ -27,15 +27,15 @@
 
 5. use correlation filter method to find some highly correlated variables
   1. correlation method should be used for numeric values
-    ```
-    library(corrplot)
-    library(caret)
-    temp <- train.num[,-1:-2]
-    corr.Matrix <- cor(, use="pairwise.complete.obs")
-    corr.75 <- findCorrelation(corr.Matrix, cutoff = 0.75)
-    train.num.75 <- temp[, corr.75]
-    corrplot(corr.Matrix, order = "hclust")
-    ```
+  ```
+  library(corrplot)
+  library(caret)
+  temp <- train.num[,-1:-2]
+  corr.Matrix <- cor(, use="pairwise.complete.obs")
+  corr.75 <- findCorrelation(corr.Matrix, cutoff = 0.75)
+  train.num.75 <- temp[, corr.75]
+  corrplot(corr.Matrix, order = "hclust")
+  ```
 5. 
 
 
