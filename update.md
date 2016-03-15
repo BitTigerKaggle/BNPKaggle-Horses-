@@ -27,15 +27,15 @@
 
 5. Imputation and Feature engineering 
   1. use correlation filter method to find some highly correlated variables. Correlation method should be used for numeric values, this is mainly for find and remove redundant variables
-  ```
-  library(corrplot)
-  library(caret)
-  temp <- train.num[,-1:-2]
-  corr.Matrix <- cor(, use="pairwise.complete.obs")  # mainly for NA values
-  corr.75 <- findCorrelation(corr.Matrix, cutoff = 0.75)
-  train.num.75 <- temp[, corr.75]
-  corrplot(corr.Matrix, order = "hclust")
-  ```
+    ```
+    library(corrplot)
+    library(caret)
+    temp <- train.num[,-1:-2]
+    corr.Matrix <- cor(, use="pairwise.complete.obs")  # mainly for NA values
+    corr.75 <- findCorrelation(corr.Matrix, cutoff = 0.75)
+    train.num.75 <- temp[, corr.75]
+    corrplot(corr.Matrix, order = "hclust")
+    ```
   2. Try various imputation methods
     * Imputation default value -1
     * Try to use [KNNImpute](http://www.inside-r.org/packages/cran/imputation/docs/kNNImpute)
