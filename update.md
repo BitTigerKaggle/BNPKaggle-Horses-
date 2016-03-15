@@ -7,7 +7,7 @@
   2. read.csv is also fine, but would be slow
 
 2. convert the categorical data to numeric value, this is mainly for visualizing NAs. (optional for Xgboost)
-  - The code in R is below:
+  The code in R is below:
     ```
     for (f in names(train)) {
       if (class(train[[f]])=="character") { 
