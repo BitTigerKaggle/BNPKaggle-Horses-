@@ -36,7 +36,7 @@
     temp <- train.num[,-1:-2]
     corr.Matrix <- cor(, use="pairwise.complete.obs")  # mainly for NA values
     corr.75 <- findCorrelation(corr.Matrix, cutoff = 0.75)
-    train.num.75 <- temp[, corr.75]
+    train.num.75 <- temp[, corr.75]  # try different threshold 0.85 and 0.9
     corrplot(corr.Matrix, order = "hclust")
     
     ```
@@ -48,8 +48,10 @@
     * _information.gain_
     * _gain ratio_
     * _symmetrical.uncertainty_
+  
+  4. Read this paper to get deep understaning of feature selection. [An Introduction to Variable and Feature Selection](http://www.jmlr.org/papers/volume3/guyon03a/guyon03a.pdf)
 
-
+6. Until now, there are several result of train dataset after data cleaning, imputation and feature selection. 
 
 
 
