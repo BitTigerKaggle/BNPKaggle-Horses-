@@ -27,7 +27,7 @@
   1. [Analysis of duplicate variables](https://www.kaggle.com/c/bnp-paribas-cardif-claims-management/forums/t/19240/analysis-of-duplicate-variables-correlated-variables-large-post). However, this kind of manual method is not realistic if we have thousands of variables. 
 
 5. Imputation and Feature engineering 
-  1. use correlation filter method to find some highly correlated variables. Correlation method should be used for numeric values, this is mainly for find and remove redundant variables. 
+  1. Find and remove redundant variables. Use correlation filter method to find some highly correlated variables. Correlation method should be used for numeric values. 
   
     ```R
     
@@ -41,10 +41,13 @@
     
     ```
   2. Try various imputation methods
-    * Imputation default value -1
+    * Imputation default value -1. This could be the baseline method. 
     * Try to use [KNNImpute](http://www.inside-r.org/packages/cran/imputation/docs/kNNImpute)
     * Optional for [Amelia](http://gking.harvard.edu/amelia) and [Multiple Imputation](http://www.stefvanbuuren.nl/mi/). Do some research on [Multiple imputation course](http://www.stefvanbuuren.nl/mi/course.html)
-  3. 
+  3. Use [entropy based method](https://cran.r-project.org/web/packages/FSelector/FSelector.pdf) to choose some related variables to target variable. 
+    * _information.gain_
+    * _gain ratio_
+    * _symmetrical.uncertainty_
 
 
 
