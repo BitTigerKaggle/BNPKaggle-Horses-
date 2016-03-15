@@ -8,7 +8,7 @@
 
 2. convert the categorical data to numeric value, this is mainly for visualizing NAs. (optional for Xgboost). 
   The code in R is below:
-    ```
+    ```R
     for (f in names(train)) {
       if (class(train[[f]])=="character") { 
         levels <- unique(c(train[[f]], test[[f]]))
@@ -27,7 +27,7 @@
 
 5. Imputation and Feature engineering 
   1. use correlation filter method to find some highly correlated variables. Correlation method should be used for numeric values, this is mainly for find and remove redundant variables
-    ```
+    ```R
     library(corrplot)
     library(caret)
     temp <- train.num[,-1:-2]
